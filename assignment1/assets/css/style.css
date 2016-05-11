@@ -1,8 +1,4 @@
-*{
-	margin: 0 auto 0 auto;
-	text-align:left;
-}
-
+/* larger than 800px */
 body{
 	margin:0;
 	padding:0;
@@ -77,6 +73,14 @@ section{
 	padding:40px 20px;
 }
 
+.wrapper {
+	width: 80%;
+	min-width:800px;
+	max-width: 1000px;
+	padding:2em;
+
+}
+
 #biosection{
 	width: 200px;
 	height: 200px;
@@ -127,3 +131,24 @@ aside{
 
 }
 
+/*styles for up to 800px */
+@media screen and (max-width: 800px) {
+	.wrapper {
+	width: 80%;
+	min-width:480px;
+	max-width: 800px;
+	padding:2em;
+
+}
+
+
+
+/*styles for up to 480px */
+
+@media screen and (max-width: 480px) {
+	.wrapper {
+	width: 80%;
+	min-width:320px;
+	max-width: 480px;
+	padding:2em;
+}
